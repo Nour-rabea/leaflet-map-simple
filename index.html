@@ -28,17 +28,17 @@
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
     center: [31.2073, 27.4905], // EDIT latitude, longitude to re-center map
-    zoom: 12,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
-    scrollWheelZoom: false
+    zoom: 17,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
+    scrollWheelZoom: true
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT latitude, longitude to re-position marker
+  L.marker([31.204309, 27.489544]).addTo(map) // EDIT latitude, longitude to re-position marker
   .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
 
   </script>
