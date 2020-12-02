@@ -28,19 +28,23 @@
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
     center: [31.2073, 27.4905], // EDIT latitude, longitude to re-center map
-    zoom: 17,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
+    zoom: 10,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: true
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
+var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
   L.marker([31.204309, 27.489544]).addTo(map) // EDIT latitude, longitude to re-position marker
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  .bindPopup("New Castle Project"); // EDIT pop-up text message
 
+  L.marker([31.205805, 27.499168]).addTo(map) // EDIT latitude, longitude to re-position marker
+  .bindPopup("Crystal Lagoons"); // EDIT pop-up text message    
+    
   </script>
 </body>
 </html>
