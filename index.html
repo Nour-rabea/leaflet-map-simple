@@ -19,15 +19,14 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">Market Research</div>
+  <div id="map-title">North Coast - Market Research</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
   <script>
 
   /* Set up the initial map center and zoom level */
-  var map = L.map('map', {
-    center: [31.2073, 27.4905], // EDIT latitude, longitude to re-center map
+  var map = L.map('map', {center: [31.2073, 27.4905], // EDIT latitude, longitude to re-center map
     zoom: 12,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: true
   });
