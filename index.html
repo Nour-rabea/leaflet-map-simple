@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">North Coast - Market Research</div>
+  <div id="map-title">North Coast</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -46,6 +46,9 @@ var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{
     
 L.marker([31.197140, 27.553787]).addTo(map) // EDIT latitude, longitude to re-position marker
   .bindPopup("Almaza Bay"); // EDIT pop-up text message
+	  
+L.marker([31.234692974268796, 27.412238575987377]).addTo(map) // EDIT latitude, longitude to re-position marker
+  .bindPopup("Costa Delona"); // EDIT pop-up text message
 	  
   </script>
 </body>
